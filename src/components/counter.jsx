@@ -41,6 +41,14 @@ class Counter extends Component {
     return value === 0 ? "Zero" : value;
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    // console.log("prevProps", prevProps);
+    // console.log("prevState", prevState);
+    // if (prevProps.counter.value !== this.props.counter.value) {
+    //   console.log("prevProps", prevProps);
+    // }
+  }
+
   render() {
     return (
       <React.Fragment>
